@@ -28,7 +28,7 @@ module "database" {
 module "compute" {
     source                   = "./modules/compute"
     ec2_lt_name              = "${var.ec2_lt_name}"
-    ec2_lt_ami               = "${var.ec2_lt_ami}"
+    ec2_lt_ami               = "ami-069aabeee6f53e7bf"
     ec2_lt_instance_type     = "${var.ec2_lt_instance_type}"
     ec2_lt_ssh_key_name      = "${var.ec2_lt_ssh_key_name}"
     ec2_lb_name              = "${var.ec2_lb_name}"
