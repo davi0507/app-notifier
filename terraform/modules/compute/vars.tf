@@ -26,7 +26,7 @@ variable "ec2_lt_ami" {
     type    = string
     default = "ami-02e136e904f3da870"
     validation {
-        condition     = length(var.ami) > 4 && substr(var.ami, 0, 4) == "ami-"
+        condition     = length(var.ec2_lt_ami) > 4 && substr(var.ec2_lt_ami, 0, 4) == "ami-"
         error_message = "refaça até acertar seu merda"
     }
 }
