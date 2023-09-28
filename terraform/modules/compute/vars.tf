@@ -25,6 +25,10 @@ variable "ec2_lt_name" {
 variable "ec2_lt_ami" {
     type    = string
     default = "ami-02e136e904f3da870"
+    validation {
+        confition     = length(var.ami) > 4 && substr(var.ami, 0, 4) == "ami-"
+        error_message = "refaça até acertar seu merda"
+    }
 }
 
 variable "ec2_lt_instance_type" {
