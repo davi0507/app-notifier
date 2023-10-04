@@ -1,4 +1,4 @@
-# NETWORK VARS DEFAULT VALUES (INPUT IS REQUIRED BECAUSE NO DEFAULT IS DEFINED)
+# rede VARS DEFAULT VALUES (INPUT IS REQUIRED BECAUSE NO DEFAULT IS DEFINED)
 
 variable "vpc_id" {}
 variable "vpc_cidr" {}
@@ -7,7 +7,7 @@ variable "vpc_sn_pub_az2_id" {}
 variable "vpc_sg_pub_id" {}
 
 
-# DATABASE VARS DEFAULT VALUES (INPUT IS REQUIRED BECAUSE NO DEFAULT IS DEFINED)
+# dados VARS DEFAULT VALUES (INPUT IS REQUIRED BECAUSE NO DEFAULT IS DEFINED)
 
 variable "rds_endpoint" {}
 variable "rds_dbuser" {}

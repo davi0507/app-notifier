@@ -1,4 +1,4 @@
-# NETWORK VARS CUSTOM VALUES
+# rede VARS CUSTOM VALUES
 
 variable "vpc_cidr" {
     type    = string
@@ -36,7 +36,7 @@ variable "vpc_sn_priv_az2_cidr" {
 }
 
 
-# DATABASE VARS CUSTOM VALUES
+# dados VARS CUSTOM VALUES
 
 variable "rds_identifier" {
     type    = string
