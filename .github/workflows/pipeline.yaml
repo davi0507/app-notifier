@@ -51,9 +51,9 @@ jobs:
     - name: Step 09 - Terraform Plan with Contract Run
       run : checkov --directory ./terraform
 
-    - name: Step 09 - Terraform Apply
+    - name: Step 10 - Terraform Apply
       run : terraform -chdir=./terraform apply -auto-approve -input=false tfplan
 
-    - name: Step 10 - Terraform Show
+    - name: Step 11 - Terraform Show
       run : terraform -chdir=./terraform show
       
